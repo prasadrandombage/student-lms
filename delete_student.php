@@ -8,11 +8,9 @@
 body
 {
 font-family: Arial, sans-serif;
-background: url('0006.jpg');
+background: url('media/0003.jpg');
 background-size:cover;
 text-align: center;
-margin: 0;
-padding: 0;
 }
 
 .container {
@@ -70,8 +68,8 @@ background-color: #197a92;
 
 
 <body>
-
-<?php include 'menu.php'; ?> <!-- Include Menu -->
+<?php include 'header.php'; ?>
+<?php include 'menu.php'; ?>
 
 <div class="container">
 <h2>Delete Student</h2>
@@ -101,7 +99,7 @@ echo "<p>Error deleting student: " . $conn->error . "</p>";
 $conn->close();
 }
 ?>
-
+<?php include 'footer.php'; ?>
 </div>
 </body>
 </html>

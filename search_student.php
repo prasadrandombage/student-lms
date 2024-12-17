@@ -7,7 +7,7 @@
 
 body{
 font-family: Arial, sans-serif;
-background: url('0003.jpg');
+background: url('media/0003.jpg');
 background-size: cover;
 color: #333;
 text-align: center;
@@ -83,9 +83,9 @@ border-radius: 5px;
 
 
 <body>
+<?php include 'header.php'; ?>
 
-
-<?php include 'menu.php'; ?> <!-- Include Menu -->
+<?php include 'menu.php'; ?>
 
 <div class="container">
 <h2>Search Student</h2>
@@ -126,5 +126,8 @@ $conn->close();
 
 </div>
 </div>
+
+
+<?php include 'footer.php'; ?>
 </body>
 </html>

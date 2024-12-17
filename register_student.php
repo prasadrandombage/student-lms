@@ -6,21 +6,20 @@
 body
 {
 font-family: Arial, sans-serif;
-background: url('0002.jpg');
+background: url('media/0002.jpg');
 background-size: cover;
-color: #333;
 text-align: center;
-margin: 10;
-padding: 10;
+margin: 0;
+padding: 0;
 }
 
 .container
 {
 opacity: 0.9;
-margin: 50px auto;
+margin: 40px auto;
 max-width: 500px;
 background: white;
-padding: 8px;
+padding: 20px;
 border-radius: 10px;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -82,8 +81,12 @@ margin-top: 10px;
 </style>
 </head>
 
+<?php include 'header.php'; ?>
 
 <body>
+
+
+
 <div class="container">
 <h2>Register Student</h2>
 <form method="POST" action="">
@@ -103,7 +106,10 @@ margin-top: 10px;
 <input type="text" id="course" name="course" required>
 
 <button type="submit">Register</button>
+
 </form>
+
+<?php include 'footer.php'; ?>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") 

@@ -6,19 +6,17 @@
 
 body{
 font-family: Arial, sans-serif;
-background: url('0005.jpg');
+background: url('media/0003.jpg');
 background-size:cover;
 text-align: center;
-margin: 0;
-padding: 0;
 }
 
 .container {
 opacity: 0.9;
-margin: 60px auto;
-max-width: 380px;
+margin: 0px auto;
+max-width: 390px;
 background: white;
-padding: 25px;
+padding: 20px;
 border-radius: 10px;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -70,7 +68,12 @@ background-color:#197a92;
 
 
 <body>
-<?php include 'menu.php'; ?> <!-- Include Menu -->
+
+<?php include 'header.php'; ?>
+
+<?php include 'menu.php'; ?>
+
+
 <div class="container">
 <h2>Update Student</h2>
 
@@ -117,7 +120,8 @@ echo "<p>Error updating student: " . $conn->error . "</p>";
 $conn->close();
 }
 ?>
-
 </div>
+
+<?php include 'footer.php'; ?>
 </body>
 </html>

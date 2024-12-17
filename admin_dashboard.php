@@ -6,7 +6,7 @@
 body
 {
 font-family: Arial, sans-serif;
-background: url('0004.jpg');
+background: url('media/0004.jpg');
 background-size:cover;
 color: white;
 text-align: center;
@@ -17,8 +17,8 @@ padding: 0;
 .container 
 {
 opacity: 0.95;
-margin: 50px auto;
-max-width: 400px;
+margin: 60px auto;
+max-width: 500px;
 background: white;
 padding: 30px;
 border-radius: 10px;
@@ -60,14 +60,16 @@ background-color: #197a92;
 
 <body>
 
+<?php include 'header.php'; ?>
+
 <div class="container">
 <h2>Admin Dashboard</h2>
-<button onclick="window.open('search_student.php', '_blank')">Search Student</button>
-<button onclick="window.open('update_student.php', '_blank')">Update Student</button>
-<button onclick="window.open('delete_student.php', '_blank')">Delete Student</button>
-
-
+<button onclick="location.href='search_student.php'">Search Student</button>
+<button onclick="location.href='update_student.php'">Update Student</button>
+<button onclick="location.href='delete_student.php'">Delete Student</button>
 </div>
+
+<?php include 'footer.php'; ?>
 
 </body>
 </html>

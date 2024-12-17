@@ -6,7 +6,7 @@
 body
 {
 font-family: Arial, sans-serif;
-background: url('0001.jpg');
+background: url('media/0001.jpg');
 background-size: cover;
 color: #333;
 text-align: center;
@@ -78,7 +78,7 @@ margin-top: 10px;
 </head>
 
 
-
+<?php include 'header.php'; ?>
 
 <body>
 <div class="container">
@@ -93,6 +93,7 @@ margin-top: 10px;
 <button type="submit">Login</button>
 </form>
 
+<?php include 'footer.php'; ?>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
